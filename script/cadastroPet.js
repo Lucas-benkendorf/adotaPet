@@ -72,6 +72,16 @@ function adicionarPet(event) {
         document.getElementById("error-especie").innerText = ""
     }
 
+
+    const animal = {
+        foto: foto,
+        nome: nome,
+        idade: idade,
+        cor: cor,
+        descricao: descricao,
+        especie: especie
+    }
+
 }
 
 document. // seu documento HTML
