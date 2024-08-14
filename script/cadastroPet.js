@@ -11,7 +11,7 @@ function adicionarPet(event){
     if(nome === ""){
        // alert("Você não digitou o nome!")
        document.getElementById("nome"). style.borderColor = "red"
-       document.getElementById("nome"). style.borderWidth = "3px"
+       document.getElementById("nome"). style.borderWidth = "1px"
        document.getElementById("error-nome"). innerText = "Nome é obrigatório"
     }
 }

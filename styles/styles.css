@@ -57,12 +57,20 @@ select {
 
 .button-submit {
     width: 100px;
-    border-radius: 2px;
+    border-radius: 4px;
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    background-color: #fff;
     margin-top: 10px;
     align-items: right;
-    border: 1px solid grey;
+    border: 2px solid grey;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+.button-submit:hover{
+    background-color: black;
+    color: #fff;
 }
 
 .button-container {
