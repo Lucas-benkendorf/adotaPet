@@ -1,0 +1,95 @@
+body {
+    background-color: white;
+}
+
+.container-home {
+    width: 70%;
+    margin: 40px auto;
+    background-color: #373737;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+.container-home h1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+
+
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-container label {
+    margin-bottom: 3px;
+    color: white;
+
+}
+
+.input-container input,
+textarea,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 15px;
+    outline-color: black;
+    border: 1px solid grey;
+    resize: vertical;
+}
+
+.input-container textarea {
+    height: auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+
+.button-submit {
+    width: 100px;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    margin-top: 10px;
+    align-items: right;
+    border: 1px solid grey;
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+}
+
+input[type="color"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    height: 60px;
+    padding: 0;
+    width: 60px;
+}
+
+@media (max-width: 800px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    input[type="color"] {
+        width: 45px;
+        height: 45px;
+    }
+
+}
