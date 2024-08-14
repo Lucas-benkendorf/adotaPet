@@ -6,6 +6,14 @@ function adicionarPet(event){
     const cor = document.getElementById("cor").value
     const descricao = document.getElementById("descricao").value
     const especie = document.getElementById("especie").value
+
+
+    if(nome === ""){
+       // alert("Você não digitou o nome!")
+       document.getElementById("nome"). style.borderColor = "red"
+       document.getElementById("nome"). style.borderWidth = "3px"
+       document.getElementById("error-nome"). innerText = "Nome é obrigatório"
+    }
 }
 
 document. // seu documento HTML
