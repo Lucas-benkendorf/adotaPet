@@ -74,6 +74,7 @@ function adicionarPet(event) {
 
 
     const animal = {
+        id: Date.now(),
         foto: foto,
         nome: nome,
         idade: idade,
