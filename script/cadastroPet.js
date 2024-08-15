@@ -82,7 +82,7 @@ function adicionarPet(event) {
         especie: especie
     }
 
-    const listaNoLocalStorage = localStorage.parse(getItem("animais")) // vai no local storage e pega a lista
+    const listaNoLocalStorage = localStorage.parse(getItem("animais")) || [] // vai no local storage e pega a lista
     listaNoLocalStorage.push(animal)
     localStorage.setItem("animais", JSON.stringify(listaNoLocalStorage)) // salvar no local storage
  
