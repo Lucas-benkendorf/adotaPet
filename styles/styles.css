@@ -103,3 +103,26 @@ input[type="color"] {
     }
 
 }
+
+
+/* CSS DA TELA DE LISTAGEM PETS */
+
+.container-pet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px ;
+    align-items: center;
+
+}
+
+.item-pet{
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

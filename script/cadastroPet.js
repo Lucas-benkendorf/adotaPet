@@ -72,23 +72,26 @@ function adicionarPet(event) {
         document.getElementById("error-especie").innerText = ""
     }
 
+    if (nome && foto && descricao && especie) {
+        const animal = {
+            id: Date.now(),
+            foto: foto,
+            nome: nome,
+            idade: idade,
+            cor: cor,
+            descricao: descricao,
+            especie: especie
+        }
 
-    const animal = {
-        id: Date.now(),
-        foto: foto,
-        nome: nome,
-        idade: idade,
-        cor: cor,
-        descricao: descricao,
-        especie: especie
+        
+
+        let listaNoLocalStorage = JSON.parse(localStorage.getItem("animais")) || [] // vai no local storage e pega a lista
+        listaNoLocalStorage.push(animal)
+        localStorage.setItem("animais", JSON.stringify(listaNoLocalStorage)) // salvar no local storage
+        document.getElementById("form-pet").reset();
+
     }
-
-    const listaNoLocalStorage = localStorage.parse(getItem("animais")) || [] // vai no local storage e pega a lista
-    listaNoLocalStorage.push(animal)
-    localStorage.setItem("animais", JSON.stringify(listaNoLocalStorage)) // salvar no local storage
- 
 }
-
 document. // seu documento HTML
     getElementById("form-pet") // ir no documento e localizar o elemento com o id form-pet
     .addEventListener('submit', adicionarPet) // adicionar um evento de submissão vinculado a função adicional
