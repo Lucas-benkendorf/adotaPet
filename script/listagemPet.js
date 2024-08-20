@@ -1,12 +1,12 @@
 function deletar(id) {
-// 1- ir no local e busca o array de animais
-const animaisAtuaisNaMemoria = JSON.parse(localStorage.getItem("animais"))
-const animaisFiltrados = animaisAtuaisNaMemoria.filter((item) => item.id !== id)
+    // 1- ir no local e busca o array de animais
+    const animaisAtuaisNaMemoria = JSON.parse(localStorage.getItem("animais"))
+    const animaisFiltrados = animaisAtuaisNaMemoria.filter((item) => item.id !== id)
 
-localStorage.setItem("animais", JSON.stringify(animaisFiltrados))
+    localStorage.setItem("animais", JSON.stringify(animaisFiltrados))
 
-document.getElementById("lista-animais").innerText = ""
-carregarDados()
+    document.getElementById("lista-animais").innerText = ''
+    carregarDados()
 }
 
 

@@ -60,7 +60,7 @@ select {
     width: 100px;
     border-radius: 4px;
     color: rgb(255, 255, 255);
-    background-color: #fff;
+    background-color: white;
     margin-top: 10px;
     align-items: right;
     border: 2px solid grey;
@@ -71,7 +71,7 @@ select {
 
 .button-submit:hover{
     background-color: black;
-    color: #fff;
+    color: white;
 }
 
 .button-container {
@@ -80,9 +80,6 @@ select {
 }
 
 input[type="color"] {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
     background: none;
     border: 0;
     cursor: pointer;

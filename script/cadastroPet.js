@@ -95,3 +95,23 @@ function adicionarPet(event) {
 document. // seu documento HTML
     getElementById("form-pet") // ir no documento e localizar o elemento com o id form-pet
     .addEventListener('submit', adicionarPet) // adicionar um evento de submissão vinculado a função adicional
+
+    document.getElementById("descricao").addEventListener("blur", function() {
+        console.log(this.value)
+           // console.log(element.target.value)
+           // console.log(document.getElementById("descricao").value)
+           let valorDigitado = this.value
+
+           const palavrasInadequadas = [ "java", "github","capivara", "delphi", "gupy"]
+           console.log(palavrasInadequadas[2])
+
+           palavrasInadequadas.forEach((palavra) => {
+            //console.log(palavra)
+            if(valorDigitado.includes(palavra)){
+                console.log("Tem a palavra na string", palavra)
+                valorDigitado.replaceAll(palavra, "******")
+            }
+
+           })
+        
+    })
