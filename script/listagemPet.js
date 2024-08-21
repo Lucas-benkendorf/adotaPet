@@ -38,13 +38,28 @@ function carregarDados() {
 
         const h2 = document.createElement("h2")
         h2.innerText = animal.nome
+        div.append(h2)
 
 
 
-        const button = document.createElement("button")
-        button.innetText = "Deletar"
-        button.onclick = () => deletar(pet.id)
-        div.append(button)
+        const buttonDelete = document.createElement("button")
+        buttonDelete.innetText = "Deletar"
+        buttonDelete.onclick = () => deletar(pet.id)
+
+
+        const buttonAdotar = document.createElement("button")
+        buttonAdotar.innerText = "Adotar"
+        buttonAdotar.onclick = () => window.location.href = "detalhes.html?id" + pet.id
+
+
+        const divButtons = document.createElement("div")
+        divButtons.classList.add("petCardButtons")
+        divButtons.append(buttonAdotar)
+        divButtons.append(buttonDelete)
+
+        div.append(divButtons)
+
+        //div.append(button)
 
         lista.appendChild(div)
 

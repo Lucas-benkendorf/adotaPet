@@ -113,5 +113,9 @@ document. // seu documento HTML
             }
 
            })
+
+           document.getElementById("nome").addEventListener("paste"), function(event){
+            //event.preventDefault()
+           }
         
     })

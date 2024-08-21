@@ -137,3 +137,8 @@ input[type="color"] {
 font-size: 20px;
 font-weight: bold;
 }
+
+.petCardButtons{
+    display: flex;
+    gap: 20px
+}
